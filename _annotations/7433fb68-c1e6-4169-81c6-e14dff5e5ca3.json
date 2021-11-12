@@ -1,0 +1,44 @@
+---
+canvas: "https://dnoneill.github.io/wax-iiif/img/derivatives/iiif/canvas/fullBayeux.json"
+order: 2
+---
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@type": "oa:Annotation",
+    "motivation": [
+        "oa:commenting"
+    ],
+    "resource": [
+        {
+            "@type": "dctypes:Text",
+            "format": "text/html",
+            "chars": "<p>test</p>"
+        }
+    ],
+    "on": [
+        {
+            "@type": "oa:SpecificResource",
+            "full": "https://dnoneill.github.io/wax-iiif/img/derivatives/iiif/canvas/fullBayeux.json",
+            "selector": {
+                "@type": "oa:Choice",
+                "default": {
+                    "@type": "oa:FragmentSelector",
+                    "value": "xywh=18789,137,6,285"
+                },
+                "item": {
+                    "@type": "oa:SvgSelector",
+                    "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M18789.97733,178.54376c0.52114,-23.93097 1.25629,-41.75156 1.99501,-41.73027v0v0c0.73871,0.02129 1.38226,16.69216 1.99501,41.73027c0.61275,25.03811 0.85092,63.19135 0.82636,100.74578c-0.02456,37.55443 -0.31184,74.51005 -0.82636,100.74578c-0.51452,26.23573 -1.25629,41.75156 -1.99501,41.73027c-0.73871,-0.02129 -1.47438,-15.57971 -1.99501,-41.73027c-0.52063,-26.15056 -0.82623,-62.89327 -0.82636,-100.74578c-0.00013,-37.85251 0.30522,-76.81481 0.82636,-100.74578z\" data-paper-data=\"{&quot;strokeWidth&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"ellipse_71fa6bda-2b71-4b1d-92e8-4b92617304e0\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+                }
+            },
+            "within": {
+                "@id": "https://dnoneill.github.io/wax-iiif/img/derivatives/iiif/fullBayeux/manifest.json",
+                "@type": "sc:Manifest"
+            }
+        }
+    ],
+    "oa:annotatedAt": "2021-11-12T23:50:09.404Z",
+    "@id": "7433fb68-c1e6-4169-81c6-e14dff5e5ca3.json",
+    "oa:annotatedBy": [
+        "dnoneill"
+    ]
+}
