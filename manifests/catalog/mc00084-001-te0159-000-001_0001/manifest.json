@@ -1,23 +1,11 @@
 ---
+layout: none
 ---
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "https://dnoneill.github.io/test-mirador/manifests/catalog/mc00084-001-te0159-000-001_0001/manifest.json",
+  "@id": "{{ '/' | absolute_url }}manifests/catalog/mc00084-001-te0159-000-001_0001/manifest.json",
   "@type": "sc:Manifest",
   "label": "NCSU - University Plaza -- \"Chrysalis\" Sketches",
-  "related": {
-    "@id": "https://d.lib.ncsu.edu/collections/catalog/mc00084-001-te0159-000-001_0001",
-    "format": "text/html",
-    "label": "HTML page for the resource",
-    "dcterms:modified": "2021-02-17T20:21:58.231Z"
-  },
-  "logo": {
-    "@id": "https://d.lib.ncsu.edu/collections/assets/ncsu-libraries-white-logo-placement-0ac6d32dfc3427d3325882e6a32c81be.jpg"
-  },
-  "attribution": "Richard C. Bell collection (MC00084), Special Collections Research Center at NC State University Libraries",
-  "license": [
-    "https://d.lib.ncsu.edu/collections/about#rights_and_use"
-  ],
   "metadata": [
     {
       "label": "title",
@@ -46,46 +34,18 @@
   ],
   "thumbnail": {
     "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001/full/150,/0/default.jpg",
+    "@type": "dctypes:Image",
     "service": {
       "@context": "http://iiif.io/api/image/2/context.json",
       "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001",
       "profile": "http://iiif.io/api/image/2/level2.json"
     }
   },
-  "sequences": [
-    {
-      "canvases": [
-        {
-          "@type": "sc:Canvas",
-          "@id": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001",
-          "width": 9089,
-          "height": 6180,
-          "label": "[1]",
-          "images": [
-            {
-              "@id": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001/image",
-              "@type": "oa:Annotation",
-              "on": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001/full/1170,/0/default.jpg",
-                "width": 9089,
-                "height": 6180,
-                "service": {
-                  "profile": "http://iiif.io/api/image/2/level2.json",
-                  "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001"
-                },
-                "@type": "dctypes:Image"
-              }
-            }
-          ]
-        }
-      ],
-      "@type": "sc:Sequence",
-      "viewingHint": "non-paged"
-    }
-  ],
+  "attribution": "Richard C. Bell collection (MC00084), Special Collections Research Center at NC State University Libraries",
+  "license": "https://d.lib.ncsu.edu/collections/about#rights_and_use",
+  "logo": {
+    "@id": "https://d.lib.ncsu.edu/collections/assets/ncsu-libraries-white-logo-placement-0ac6d32dfc3427d3325882e6a32c81be.jpg"
+  },
   "seeAlso": [
     {
       "@id": "https://d.lib.ncsu.edu/collections/catalog/oai?identifier=ncsul%2Fmc00084-001-te0159-000-001_0001&metadataPrefix=oai_dc&verb=GetRecord",
@@ -99,6 +59,53 @@
       "label": "Schema.org metadata as JSON-LD"
     }
   ],
-  "dcterms:modified": "2021-02-17T20:21:55.000Z",
-  "dcterms:created": "2013-08-21T20:47:01.000Z"
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "viewingHint": "non-paged",
+      "canvases": [
+        {
+          "@id": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001",
+          "@type": "sc:Canvas",
+          "label": "[1]",
+          "height": 6180,
+          "width": 9089,
+          "images": [
+            {
+              "@id": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001/image",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001/full/1170,/0/default.jpg",
+                "@type": "dctypes:Image",
+                "height": 6180,
+                "width": 9089,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://iiif.lib.ncsu.edu/iiif/mc00084-001-te0159-000-001_0001",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                }
+              },
+              "on": "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001_0001"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "{{ '/' | absolute_url }}annotations/mc00084-001-te0159-000-001-0001-list.json",
+              "@type": "sc:AnnotationList",
+              "label": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "related": {
+    "@id": "https://d.lib.ncsu.edu/collections/catalog/mc00084-001-te0159-000-001_0001",
+    "format": "text/html",
+    "label": "HTML page for the resource",
+    "dcterms:modified": "2021-02-17T20:21:58.231Z"
+  },
+  "dcterms:created": "2013-08-21T20:47:01.000Z",
+  "dcterms:modified": "2021-02-17T20:21:55.000Z"
 }
