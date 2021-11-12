@@ -6,4 +6,4 @@ canvas_id: "https://d.lib.ncsu.edu/collections/canvas/mc00084-001-te0159-000-001
 "@context":http://iiif.io/api/presentation/2/context.json
 "id": "{{ site.url }}{{ site.baseurl }}{{page.url}}",
 "type": oa:AnnotationList
-"items": [{{ annotations | join: ","}}] }
+"resources": [{{ annotations | join: ","}}] }
